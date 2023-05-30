@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using SalesWebMVC.Models;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace SalesWebMVC.Data
 {
@@ -14,6 +9,6 @@ namespace SalesWebMVC.Data
         {
         }
 
-        public DbSet<SalesWebMVC.Models.Department> Department { get; set; } = default!;
+        public DbSet<Models.Department> Department { get; set; } = default!;
     }
 }
