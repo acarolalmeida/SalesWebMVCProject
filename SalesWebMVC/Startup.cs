@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
+using SalesWebMVC.Services;
 
 namespace SalesWebMvc
 {
@@ -31,7 +32,7 @@ namespace SalesWebMvc
 
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddScoped<SeedingService>();
-            //services.AddScoped<SellerService>();
+            services.AddScoped<SellerService>();
             //services.AddScoped<DepartmentService>();
             //services.AddScoped<SalesRecordService>();
         }
