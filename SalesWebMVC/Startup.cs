@@ -28,7 +28,7 @@ namespace SalesWebMvc
             var connectionString = Configuration.GetConnectionString("SalesWebMVCContext");
             services.AddDbContext<SalesWebMVCContext>(options =>
                     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString), builder =>
-                        builder.MigrationsAssembly("SalesWebMvc")));
+                        builder.MigrationsAssembly("SalesWebMVC")));
 
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddScoped<SeedingService>();
